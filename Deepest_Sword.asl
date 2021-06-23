@@ -69,7 +69,7 @@ reset {
 
 split
 {
-	if(current.length != old.length)
+	if(current.length > vars.realLength)
 	{
 		if(settings["10x"] && old.length == 5)
 		{
