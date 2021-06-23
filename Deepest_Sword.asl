@@ -61,12 +61,9 @@ reset {
 	{
 		return true;
 	}
-	else
+	else if(!settings ["10x"] && current.Timer == 0)
 	{
-		if(current.Timer == 0)
-		{
-			return true;
-		}
+		return true;
 	}
 }
 
